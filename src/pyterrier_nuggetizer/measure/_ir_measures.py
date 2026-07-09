@@ -9,4 +9,4 @@ SUPPORTED_MEASURES = {'VitalScore', 'WeightedScore', 'AllScore'}
 def measure_factory(attr: str, nuggetizer_provider: str):
     if attr in SUPPORTED_MEASURES:
         nuggetizer_provider.make_provider()
-        return getattr(open_nuggetizer.measure._measures, attr)
+        return getattr(pyterrier_nuggetizer.measure._measures, attr)
